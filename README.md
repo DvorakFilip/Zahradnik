@@ -13,11 +13,11 @@ Device can be powered solely through an electric outlet or via a battery that is
 
 ### To be implemented:
 
-#### - [ ] Phase I.
+#### Phase I.
 - [X] ESP32 can turn on a pump
 - [ ] Device is outlet powered
 
-#### - [X] Phase II.A
+#### Phase II.A
 - [ ] Device can use sensors to measure
     - [ ] soil moisture
     - [ ] water level
