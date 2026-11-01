@@ -1,20 +1,14 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="CLOzUNh_36pSF6GcwPnY">
-    <mxGraphModel dx="1133" dy="703" grid="1" gridSize="15" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1000" math="0" shadow="0">
+    <mxGraphModel dx="1133" dy="703" grid="1" gridSize="15" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1350" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="EgraLY-WFGxl1WDFslQ1-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Zahradník (IN)&lt;/font&gt;&lt;/b&gt;" vertex="1">
           <mxGeometry height="60" width="180" x="645" y="300" as="geometry" />
         </mxCell>
-        <mxCell id="EgraLY-WFGxl1WDFslQ1-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;+ OUT&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="60" width="150" x="660" y="420" as="geometry" />
-        </mxCell>
-        <mxCell id="EgraLY-WFGxl1WDFslQ1-7" edge="1" parent="1" source="EgraLY-WFGxl1WDFslQ1-3" target="EgraLY-WFGxl1WDFslQ1-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="reg-core" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;fillColor=none;strokeColor=#6c8ebf;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=12;spacingTop=4;fontStyle=1;fontSize=14;" value="Core" vertex="1">
-          <mxGeometry height="120" width="405" x="0" y="90" as="geometry" />
+          <mxGeometry height="120" width="600" x="0" y="90" as="geometry" />
         </mxCell>
         <mxCell id="pump" parent="reg-core" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Pump AD20P-1230E&lt;/b&gt;&lt;br&gt;12 V, ~350 mA" vertex="1">
           <mxGeometry height="60" width="180" x="15" y="45" as="geometry" />
@@ -22,8 +16,11 @@
         <mxCell id="esp" parent="reg-core" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;ESP32 board&lt;/b&gt;&lt;br&gt;GPIO 25/26/27/32/33" vertex="1">
           <mxGeometry height="60" width="180" x="210" y="45" as="geometry" />
         </mxCell>
+        <mxCell id="in-tube" parent="reg-core" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Tube / hose&lt;/b&gt;&lt;br&gt;fits the pump outlet" vertex="1">
+          <mxGeometry height="60" width="180" x="405" y="45" as="geometry" />
+        </mxCell>
         <mxCell id="reg-power" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;fillColor=none;strokeColor=#6c8ebf;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=12;spacingTop=4;fontStyle=1;fontSize=14;" value="Power" vertex="1">
-          <mxGeometry height="120" width="600" x="435" y="90" as="geometry" />
+          <mxGeometry height="120" width="600" x="630" y="90" as="geometry" />
         </mxCell>
         <mxCell id="adapter" parent="reg-power" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;12 V adapter&lt;/b&gt;&lt;br&gt;≥1 A, 5.5/2.1 plug" vertex="1">
           <mxGeometry height="60" width="180" x="15" y="45" as="geometry" />
@@ -35,7 +32,7 @@
           <mxGeometry height="60" width="180" x="405" y="45" as="geometry" />
         </mxCell>
         <mxCell id="reg-switch" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;fillColor=none;strokeColor=#6c8ebf;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=12;spacingTop=4;fontStyle=1;fontSize=14;" value="Pump switching" vertex="1">
-          <mxGeometry height="120" width="600" x="1065" y="90" as="geometry" />
+          <mxGeometry height="120" width="600" x="1260" y="90" as="geometry" />
         </mxCell>
         <mxCell id="mosfet" parent="reg-switch" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;MOSFET module LR7843&lt;/b&gt;&lt;br&gt;low side, 3.3–5 V control" vertex="1">
           <mxGeometry height="60" width="180" x="15" y="45" as="geometry" />
@@ -46,69 +43,6 @@
         <mxCell id="pulldown" parent="reg-switch" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;dashed=1;" value="&lt;b&gt;10 kΩ resistor&lt;/b&gt; (if needed)&lt;br&gt;signal → GND" vertex="1">
           <mxGeometry height="60" width="180" x="405" y="45" as="geometry" />
         </mxCell>
-        <mxCell id="reg-1s" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;fillColor=none;strokeColor=#82b366;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=12;spacingTop=4;fontStyle=1;fontSize=14;" value="1 cell (1S, 3.0–4.2 V) – pump via step-up" vertex="1">
-          <mxGeometry height="345" width="600" x="135" y="555" as="geometry" />
-        </mxCell>
-        <mxCell id="s1-cell" parent="reg-1s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;18650 cell + holder&lt;/b&gt;&lt;br&gt;genuine, branded" vertex="1">
-          <mxGeometry height="60" width="180" x="15" y="45" as="geometry" />
-        </mxCell>
-        <mxCell id="s1-tp4056" parent="reg-1s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;TP4056 with protection&lt;/b&gt;&lt;br&gt;load on OUT+/OUT−" vertex="1">
-          <mxGeometry height="60" width="180" x="210" y="45" as="geometry" />
-        </mxCell>
-        <mxCell id="s1-boost" parent="reg-1s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Step-up 3.7 → 12 V&lt;/b&gt;&lt;br&gt;SX1308 / XY-016, test at 3.0 V" vertex="1">
-          <mxGeometry height="60" width="180" x="405" y="45" as="geometry" />
-        </mxCell>
-        <mxCell id="s1-mosfet" parent="reg-1s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Logic-level MOSFET&lt;/b&gt;&lt;br&gt;on step-up IN−, full on at ~3 V" vertex="1">
-          <mxGeometry height="60" width="180" x="15" y="120" as="geometry" />
-        </mxCell>
-        <mxCell id="s1-pulldown" parent="reg-1s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;10 kΩ gate pull-down&lt;/b&gt;&lt;br&gt;step-up off during boot" vertex="1">
-          <mxGeometry height="60" width="180" x="210" y="120" as="geometry" />
-        </mxCell>
-        <mxCell id="s1-cap" parent="reg-1s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Capacitor 470–1000 µF&lt;/b&gt;&lt;br&gt;battery side of the switch" vertex="1">
-          <mxGeometry height="60" width="180" x="405" y="120" as="geometry" />
-        </mxCell>
-        <mxCell id="s1-diode" parent="reg-1s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Diode 1N5819&lt;/b&gt;&lt;br&gt;across pump" vertex="1">
-          <mxGeometry height="60" width="180" x="15" y="195" as="geometry" />
-        </mxCell>
-        <mxCell id="s1-board" parent="reg-1s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Low-power ESP32 board&lt;/b&gt;&lt;br&gt;µA sleep, battery input" vertex="1">
-          <mxGeometry height="60" width="180" x="210" y="195" as="geometry" />
-        </mxCell>
-        <mxCell id="s1-divider" parent="reg-1s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Voltage divider&lt;/b&gt;&lt;br&gt;2× 1 MΩ + 100 nF → ADC" vertex="1">
-          <mxGeometry height="60" width="180" x="405" y="195" as="geometry" />
-        </mxCell>
-        <mxCell id="s1-fuse" parent="reg-1s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;dashed=1;" value="&lt;b&gt;Fuse 2–3 A&lt;/b&gt; (optional)" vertex="1">
-          <mxGeometry height="60" width="180" x="15" y="270" as="geometry" />
-        </mxCell>
-        <mxCell id="reg-3s" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;fillColor=none;strokeColor=#82b366;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=12;spacingTop=4;fontStyle=1;fontSize=14;" value="3 cells (3S, 9–12.6 V) – pump direct" vertex="1">
-          <mxGeometry height="270" width="600" x="765" y="555" as="geometry" />
-        </mxCell>
-        <mxCell id="s3-cells" parent="reg-3s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;3× 18650 + holders&lt;/b&gt;&lt;br&gt;matched: same model, batch, voltage" vertex="1">
-          <mxGeometry height="60" width="180" x="15" y="45" as="geometry" />
-        </mxCell>
-        <mxCell id="s3-bms" parent="reg-3s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;3S BMS with balancing&lt;/b&gt;&lt;br&gt;rated above total pump current" vertex="1">
-          <mxGeometry height="60" width="180" x="210" y="45" as="geometry" />
-        </mxCell>
-        <mxCell id="s3-charger" parent="reg-3s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;3S charger 12.6 V CC/CV&lt;/b&gt;&lt;br&gt;never a plain 12 V adapter" vertex="1">
-          <mxGeometry height="60" width="180" x="405" y="45" as="geometry" />
-        </mxCell>
-        <mxCell id="s3-fuse" parent="reg-3s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Fuse&lt;/b&gt;&lt;br&gt;on pack output" vertex="1">
-          <mxGeometry height="60" width="180" x="15" y="120" as="geometry" />
-        </mxCell>
-        <mxCell id="s3-buck" parent="reg-3s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Step-down for ESP&lt;/b&gt;&lt;br&gt;low idle current" vertex="1">
-          <mxGeometry height="60" width="180" x="210" y="120" as="geometry" />
-        </mxCell>
-        <mxCell id="s3-board" parent="reg-3s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Low-power ESP32 board&lt;/b&gt;&lt;br&gt;µA sleep" vertex="1">
-          <mxGeometry height="60" width="180" x="405" y="120" as="geometry" />
-        </mxCell>
-        <mxCell id="s3-mosfet" parent="reg-3s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;MOSFET module LR7843&lt;/b&gt;&lt;br&gt;one per pump, low side" vertex="1">
-          <mxGeometry height="60" width="180" x="15" y="195" as="geometry" />
-        </mxCell>
-        <mxCell id="s3-diode" parent="reg-3s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Diode 1N5819&lt;/b&gt;&lt;br&gt;across each pump" vertex="1">
-          <mxGeometry height="60" width="180" x="210" y="195" as="geometry" />
-        </mxCell>
-        <mxCell id="s3-divider" parent="reg-3s" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Voltage divider ~1:5&lt;/b&gt;&lt;br&gt;+ 100 nF → ADC" vertex="1">
-          <mxGeometry height="60" width="180" x="405" y="195" as="geometry" />
-        </mxCell>
         <mxCell id="e-reg-core" edge="1" parent="1" source="EgraLY-WFGxl1WDFslQ1-3" target="reg-core" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -118,10 +52,127 @@
         <mxCell id="e-reg-switch" edge="1" parent="1" source="EgraLY-WFGxl1WDFslQ1-3" target="reg-switch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-reg-1s" edge="1" parent="1" source="EgraLY-WFGxl1WDFslQ1-4" target="reg-1s" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;">
+        <mxCell id="EgraLY-WFGxl1WDFslQ1-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Zahradník OUT&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="180" x="855" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="reg-1s-core" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;fillColor=none;strokeColor=#82b366;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=12;spacingTop=4;fontStyle=1;fontSize=14;" value="Core" vertex="1">
+          <mxGeometry height="120" width="600" x="225" y="705" as="geometry" />
+        </mxCell>
+        <mxCell id="s1-pump" parent="reg-1s-core" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Pump AD20P-1230E&lt;/b&gt;&lt;br&gt;12 V, ~350 mA" vertex="1">
+          <mxGeometry height="60" width="180" x="15" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s1-board" parent="reg-1s-core" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Low-power ESP32 board&lt;/b&gt;&lt;br&gt;µA sleep, battery input" vertex="1">
+          <mxGeometry height="60" width="180" x="210" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s1-tube" parent="reg-1s-core" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Tube / hose&lt;/b&gt;&lt;br&gt;fits the pump outlet" vertex="1">
+          <mxGeometry height="60" width="180" x="405" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="reg-1s-power" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;fillColor=none;strokeColor=#82b366;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=12;spacingTop=4;fontStyle=1;fontSize=14;" value="Power" vertex="1">
+          <mxGeometry height="195" width="600" x="225" y="855" as="geometry" />
+        </mxCell>
+        <mxCell id="s1-cell" parent="reg-1s-power" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;18650 cell + holder&lt;/b&gt;&lt;br&gt;genuine, branded" vertex="1">
+          <mxGeometry height="60" width="180" x="15" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s1-tp4056" parent="reg-1s-power" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;TP4056 with protection&lt;/b&gt;&lt;br&gt;load on OUT+/OUT−" vertex="1">
+          <mxGeometry height="60" width="180" x="210" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s1-cap" parent="reg-1s-power" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Capacitor 470–1000 µF&lt;/b&gt;&lt;br&gt;battery side of the switch" vertex="1">
+          <mxGeometry height="60" width="180" x="405" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s1-divider" parent="reg-1s-power" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Voltage divider&lt;/b&gt;&lt;br&gt;2× 1 MΩ + 100 nF → ADC" vertex="1">
+          <mxGeometry height="60" width="180" x="15" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s1-fuse" parent="reg-1s-power" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;dashed=1;" value="&lt;b&gt;Fuse 2–3 A&lt;/b&gt; (optional)" vertex="1">
+          <mxGeometry height="60" width="180" x="210" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="reg-1s-switch" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;fillColor=none;strokeColor=#82b366;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=12;spacingTop=4;fontStyle=1;fontSize=14;" value="Pump switching" vertex="1">
+          <mxGeometry height="195" width="600" x="225" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="s1-boost" parent="reg-1s-switch" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Step-up 3.7 → 12 V&lt;/b&gt;&lt;br&gt;SX1308 / XY-016, test at 3.0 V" vertex="1">
+          <mxGeometry height="60" width="180" x="15" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s1-mosfet" parent="reg-1s-switch" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Logic-level MOSFET&lt;/b&gt;&lt;br&gt;on step-up IN−, full on at ~3 V" vertex="1">
+          <mxGeometry height="60" width="180" x="210" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s1-pulldown" parent="reg-1s-switch" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;10 kΩ gate pull-down&lt;/b&gt;&lt;br&gt;step-up off during boot" vertex="1">
+          <mxGeometry height="60" width="180" x="405" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s1-diode" parent="reg-1s-switch" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Diode 1N5819&lt;/b&gt;&lt;br&gt;across pump" vertex="1">
+          <mxGeometry height="60" width="180" x="15" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="var-1s" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#1e2a22;fontStyle=1;fontSize=14;" value="1 cell (1S)&lt;br&gt;3.0–4.2 V" vertex="1">
+          <mxGeometry height="60" width="165" x="15" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="e-var-1s" edge="1" parent="1" source="EgraLY-WFGxl1WDFslQ1-4" target="var-1s" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;exitX=0.5;exitY=1;entryX=0.5;entryY=0;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-reg-3s" edge="1" parent="1" source="EgraLY-WFGxl1WDFslQ1-4" target="reg-3s" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;">
+        <mxCell id="e-reg-1s-core" edge="1" parent="1" source="var-1s" target="reg-1s-core" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-reg-1s-power" edge="1" parent="1" source="var-1s" target="reg-1s-power" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-reg-1s-switch" edge="1" parent="1" source="var-1s" target="reg-1s-switch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="reg-3s-core" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;fillColor=none;strokeColor=#82b366;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=12;spacingTop=4;fontStyle=1;fontSize=14;" value="Core" vertex="1">
+          <mxGeometry height="120" width="600" x="1095" y="705" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-pump" parent="reg-3s-core" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Pump(s) 12 V&lt;/b&gt;&lt;br&gt;several or stronger, TBD" vertex="1">
+          <mxGeometry height="60" width="180" x="15" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-board" parent="reg-3s-core" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Low-power ESP32 board&lt;/b&gt;&lt;br&gt;µA sleep" vertex="1">
+          <mxGeometry height="60" width="180" x="210" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-tube" parent="reg-3s-core" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Tube / hose&lt;/b&gt;&lt;br&gt;fits the pump outlet" vertex="1">
+          <mxGeometry height="60" width="180" x="405" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="reg-3s-power" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;fillColor=none;strokeColor=#82b366;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=12;spacingTop=4;fontStyle=1;fontSize=14;" value="Power" vertex="1">
+          <mxGeometry height="195" width="600" x="1095" y="855" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-cells" parent="reg-3s-power" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;3× 18650 + holders&lt;/b&gt;&lt;br&gt;matched: model, batch, voltage" vertex="1">
+          <mxGeometry height="60" width="180" x="15" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-bms" parent="reg-3s-power" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;3S BMS with balancing&lt;/b&gt;&lt;br&gt;rated above total pump current" vertex="1">
+          <mxGeometry height="60" width="180" x="210" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-charger" parent="reg-3s-power" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;3S charger 12.6 V CC/CV&lt;/b&gt;&lt;br&gt;never a plain 12 V adapter" vertex="1">
+          <mxGeometry height="60" width="180" x="405" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-fuse" parent="reg-3s-power" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Fuse&lt;/b&gt;&lt;br&gt;on pack output" vertex="1">
+          <mxGeometry height="60" width="180" x="15" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-buck" parent="reg-3s-power" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Step-down for ESP&lt;/b&gt;&lt;br&gt;low idle current" vertex="1">
+          <mxGeometry height="60" width="180" x="210" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-divider" parent="reg-3s-power" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Voltage divider ~1:5&lt;/b&gt;&lt;br&gt;+ 100 nF → ADC" vertex="1">
+          <mxGeometry height="60" width="180" x="405" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="reg-3s-switch" parent="1" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;fillColor=none;strokeColor=#82b366;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=12;spacingTop=4;fontStyle=1;fontSize=14;" value="Pump switching" vertex="1">
+          <mxGeometry height="120" width="600" x="1095" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-mosfet" parent="reg-3s-switch" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;MOSFET module LR7843&lt;/b&gt;&lt;br&gt;one per pump, low side" vertex="1">
+          <mxGeometry height="60" width="180" x="15" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-diode" parent="reg-3s-switch" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="&lt;b&gt;Diode 1N5819&lt;/b&gt;&lt;br&gt;across each pump" vertex="1">
+          <mxGeometry height="60" width="180" x="210" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="s3-pulldown" parent="reg-3s-switch" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;dashed=1;" value="&lt;b&gt;10 kΩ resistor&lt;/b&gt; (if needed)&lt;br&gt;signal → GND" vertex="1">
+          <mxGeometry height="60" width="180" x="405" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="var-3s" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#1e2a22;fontStyle=1;fontSize=14;" value="3 cells (3S)&lt;br&gt;9–12.6 V" vertex="1">
+          <mxGeometry height="60" width="165" x="885" y="915" as="geometry" />
+        </mxCell>
+        <mxCell id="e-var-3s" edge="1" parent="1" source="EgraLY-WFGxl1WDFslQ1-4" target="var-3s" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;exitX=0.5;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-reg-3s-core" edge="1" parent="1" source="var-3s" target="reg-3s-core" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-reg-3s-power" edge="1" parent="1" source="var-3s" target="reg-3s-power" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-reg-3s-switch" edge="1" parent="1" source="var-3s" target="reg-3s-switch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;exitX=1;exitY=0.5;entryX=0;entryY=0.5;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
