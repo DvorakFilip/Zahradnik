@@ -27,4 +27,7 @@ Device can be powered solely through an electric outlet or via a battery that is
 - [ ] Battery can be recharged from an outlet
 
 
+### Components used:
+- Vodotěsné mini čerpadlo AD20P-1230E, 240l/h, 12V (https://www.laskakit.cz/vodotesne-mini-cerpadlo-ad20p-1230e--240l-h--12v/)
+
 <!-- ### Future version: -->
