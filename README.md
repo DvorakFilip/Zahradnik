@@ -7,6 +7,7 @@ An ESP32 powered device to automatically water plants.
 An ESP32 used as a brain that talks to a remote server. It measures soil moisture with capacitive sensors and remaining water level if water tank is used and sends it to a server which tells it to water the plants. In an emergency (drought and no server connection) it can decide by itself.
 
 Device can be powered solely through an electric outlet or via a battery that is recharged either with an outlet or a solar panel.
+That is the main difference between the IN (inside) version and OUT (outside) version.
 
 
 <!-- ### Implemented: -->
