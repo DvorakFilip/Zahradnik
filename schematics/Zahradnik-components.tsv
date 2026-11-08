@@ -1,0 +1,31 @@
+Zahradník IN (inside) version								TODO:
+general component	specific part	url	quantity	cost	have	additional notes		
+ESP32 board	ESP32-C6 16MB Flash WiFi Bluetooth IoT modul	https://www.laskakit.cz/esp32-c6-16mb-flash-wifi-bluetooth-iot-modul/	1		TRUE			
+Pump	Vodotěsné mini čerpadlo AD20P-1230E, 240l/h, 12V	https://www.laskakit.cz/vodotesne-mini-cerpadlo-ad20p-1230e--240l-h--12v/	1		TRUE			
+Adapter	Síťový napájecí adaptér 12V/1A 5,5/2,1mm	https://www.laskakit.cz/napajeci-adapter-sitovy-1000ma-5-5-2-1-mm-12v/	1		TRUE			
+DC jack	Konektor DC 5.5/2.1mm 18AWG samec 30cm kabel	https://www.laskakit.cz/konektor-dc-5-5-2-1mm-samec-25cm-kabel/	1		TRUE			
+	Konektor DC 5.5/2.1mm 18AWG samice 30cm kabel	https://www.laskakit.cz/konektor-dc-5-5-2-1mm-samice-25cm-kabel/	1		TRUE			
+Mosfet (logic level)	PWM MOSFET modul LR7843, 30VDC 161A	https://www.laskakit.cz/pwm-mosfet-modul-lr7843--30vdc-161a/	1		TRUE			
+Step down converter	Step-down měnič 12V-5V/3A, USB-C	https://www.laskakit.cz/step-down-menic-12v-5v-3a--usb-c/	1		TRUE	powers board directly with USB-C		
+Flyback diode	Microdiode Electronics Schottkyho dioda 1N5819 40V 1A DO41	https://www.laskakit.cz/schottkyho-dioda-1n5819-40v-1a-do41/	1		TRUE			
+								
+								
+								
+Zahradník OUT (outside) version								Additional stuff (not a component)
+1 Battery Cell version								Šroubovací svorkovnice do DPS KF128-2.54
+general component	specific part	url	quantity	cost	have	additional notes		Silikonová hadička
+ESP32 board	LaskaKit ESP32-C3-LPKit v4.0	https://www.laskakit.cz/laskkit-esp-12-board/?variantId=10485	1		TRUE			Oboustranná PCB prototypová deska
+Pump	Vodotěsné mini čerpadlo AD20P-1230E, 240l/h, 12V	https://www.laskakit.cz/vodotesne-mini-cerpadlo-ad20p-1230e--240l-h--12v/	1		TRUE			AWG wires
+Lithium Battery	GeB Li-Ion Baterie 18650 3200mAh 3.7V	https://www.laskakit.cz/geb-li-ion-baterie-18650-3200mah-3-7v/	1		TRUE			some resistors
+Battery holder	Bateriový box 1x18650 drátové vývody	https://www.laskakit.cz/bateriovy-box-1x18650-dratove-vyvody/	1		TRUE			
+Battery protection	Ochrana li-ion baterie 1S 3A	https://www.laskakit.cz/ochrana-li-ion-baterie-1s-3a/	0		FALSE	working current too low		
+Battery protection	Ochranný modul pro lithiovou baterii 1S 3,7V 2,5A	https://dratek.cz/arduino-platforma/2173-ochranny-modul-pro-lithiovou-baterii-1s-3.7v-2.5a.html	1		FALSE			
+Capacitor	AISHI ERS1CM471F12OT 470uF ±20% 16V kondenzátor elektrolytický	https://www.laskakit.cz/aishi-ers1cm471f12ot-470uf-20--16v-kondenzator-elektrolyticky/	1-2		FALSE			
+Fuse	Nadproudový tepelný jistič, vratná pojistka - 3A	https://dratek.cz/arduino-platforma/232176-nadproudovy-tepelny-jistic-vratna-pojistka-3a.html	0		FALSE	different connector		
+Fuse	Sada skleněných trubičkových pojistek 5x20mm 100ks	https://www.laskakit.cz/sada-sklenenych-trubickovych-pojistek-5x20mm-100ks/	1		FALSE	not currently in stock - try to find slow blow		
+Fuse Holder	Držák pro trubičkové pojistky 5x20mm s vodiči 22AWG	https://www.laskakit.cz/drzak-pro-trubickove-pojistky-5x20mm-s-vodici-22awg/	1		FALSE	not currently in stock		
+Step up converter	Step-UP měnič 2A - Nastavitelný SX1308	https://dratek.cz/arduino-platforma/1240-step-up-menic-2a-nastavitelny-sx1308.html	1		FALSE			
+Mosfet (logic level)	PWM MOSFET modul LR7843, 30VDC 161A	https://www.laskakit.cz/pwm-mosfet-modul-lr7843--30vdc-161a/	1		FALSE			
+DC jack	Konektor DC 5.5/2.1mm 18AWG samec 30cm kabel	https://www.laskakit.cz/konektor-dc-5-5-2-1mm-samec-25cm-kabel/	1		FALSE			
+	Konektor DC 5.5/2.1mm 18AWG samice 30cm kabel	https://www.laskakit.cz/konektor-dc-5-5-2-1mm-samice-25cm-kabel/	1		FALSE			
+Flyback diode	Microdiode Electronics Schottkyho dioda 1N5819 40V 1A DO41	https://www.laskakit.cz/schottkyho-dioda-1n5819-40v-1a-do41/	1		TRUE			
