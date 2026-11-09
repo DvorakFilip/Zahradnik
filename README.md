@@ -54,7 +54,7 @@ The first build of Zahradník. Powered with a 12V DC adapter, it needs no batter
 | Flyback diode | Microdiode Electronics Schottkyho dioda 1N5819 40V 1A DO41 | https://www.laskakit.cz/schottkyho-dioda-1n5819-40v-1a-do41/ | 1 | TRUE |  
 
 
-![schematic](hardware/ZahradnikAdapterINnS/schematic_cropped.svg)
+![schematic](hardware/ZahradnikAdapterINnS/schematic_cropped.png)
 
 
 ##### Phase II
