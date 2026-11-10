@@ -2,3 +2,4 @@
 temporary/
 .history
 .history/
+*.lck
